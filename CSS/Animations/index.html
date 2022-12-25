@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container
+        {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(228, 98, 228);
+            transition: 1.4s ease-in;
+        }
+        .button
+        {
+            padding: 20px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-size: 1.5rem;
+            color: #000000cc;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        .button::before
+        {
+            content: '';
+            position: absolute;
+            background-color: white;
+            border-radius: 10%;
+            width: 100%;height: 100%;
+            z-index: -1;
+            top: 0;
+            
+            left: -100%;bottom: 2px;
+            transition: 0.8s ease-in-out;
+        }
+        .button:hover::before
+        {
+            left: 0;
+            background-color:red;
+        }
+            
+    </style>
+</head>
+<body>
+   <div class="container">
+       <a class="button" href="#">button</a>
+    </div>
+</body>
+</html>

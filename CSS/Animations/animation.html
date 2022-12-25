@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            height:100vh;
+            background-color: rgba(12, 134, 63, 0.719);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .outer-box
+        {
+            height: 400px;width: 400px;
+        }
+        .box
+        {
+            height:100px;width: 100px;
+            background-color: white;
+            border-radius: 5%;
+            animation: circle 2s infinite;
+        }
+        @keyframes circle {
+            0%
+            {
+                transform: translate(0,0);
+            }
+            25%
+            {
+                background-color: blue;
+                transform: translate(0,300px);
+            }
+            50%
+            {
+               background-color: brown;
+                transform: translate(300px,300px);
+            }
+            75%
+            {
+                background-color: red;
+                transform: translate(300px,0);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outer-box">
+           <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>

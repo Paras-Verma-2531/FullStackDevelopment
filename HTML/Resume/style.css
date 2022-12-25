@@ -1,0 +1,36 @@
+*
+{
+    padding: 0px;margin: 0px;box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color:rgba(223, 214, 214, 0.788);
+}
+header>h2{
+    text-align: center;margin-left: 92px;padding: 2px;
+}
+.connect>.profile
+{
+    width: 20px;padding: 10px;margin: 2px;
+}
+.connect
+{
+    margin-left: 47%;
+}
+.items
+{
+    padding: 4px;
+}
+.education,.relevant
+{
+    margin: 5px;
+}
+.items>h4 p
+{
+    padding: 1px;
+}
+.relevant>p
+{
+    display: inline;
+    padding: 2px;
+}

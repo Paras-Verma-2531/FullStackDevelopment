@@ -1,0 +1,14 @@
+*{margin:0;padding: 0;box-sizing: border-box;}
+.container{
+    display: inline-flex;
+   flex: 1 1 300px;
+    border: 2px solid black;
+    overflow: hidden;
+    border-radius: 5px;
+    justify-content: center;
+}
+.icon{
+   padding: 10px;
+}
+.search_bar{flex: 1;border: 0;}
+.search_button{background-color: blue;color: white;border: 0;border-radius: 5px;padding: 10px;}

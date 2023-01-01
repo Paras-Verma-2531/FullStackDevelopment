@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-container{display: flex;justify-content: center;flex-direction: column;flex-wrap: wrap;align-items: flex-end;}
+        .box {
+            /* height: 50px;
+            width: 100px; */
+            background-color: aqua;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 2px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- flexbox is mostly suitable for nav bars, search bar(consist of compact elements),photo gallery -->
+    <div class="flex-container">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+    </div>
+</body>
+
+</html>

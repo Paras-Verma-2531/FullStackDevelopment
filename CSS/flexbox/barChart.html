@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexChart</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 50vw;
+            
+        }
+        .dish{text-align: center;height: 35px;}
+        .label{flex:0 0 auto;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        .pizza{background-color: tomato;
+         flex-basis: 15%;}
+        .burger{background-color:yellowgreen;
+         flex-basis: 50%;}
+        .burrito{background-color:violet;
+         flex-basis: 35%;}
+        .display{font-family: Verdana, Geneva, Tahoma, sans-serif;margin: 10px;} 
+        .display .tomato{height: 50px;width: 50px;background-color:tomato;border-radius: 50%;display: inline-block;padding: 10px;} 
+        .display .violet{height: 50px;width: 50px;background-color:violet;border-radius: 50%;display: inline-block;padding: 10px;} 
+        .display .yellowgreen{height: 50px;width: 50px;background-color:yellowgreen;border-radius: 50%;display: inline-block;padding: 10px;} 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="label">preferred dish :</div>
+        <div class="dish pizza">15%</div>
+        <div class="dish burger">50%</div>
+        <div class="dish burrito">35%</div>
+     </div>
+    <div class="display">
+        <div class="tomato"><p>pizza</p></div>
+        <div class="yellowgreen"><p>burger</p></div>
+        <div class="violet"><p>burrito</p></div>
+    </div>
+    
+</body>
+</html>

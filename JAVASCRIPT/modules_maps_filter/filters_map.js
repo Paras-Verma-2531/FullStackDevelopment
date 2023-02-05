@@ -4,3 +4,13 @@ function isEven(num)
     return num%2==0;
 }
 console.log(a.filter(isEven));
+function square(num)
+{
+    return num*num;
+}
+console.log(a.map(square));
+const StringArr=["paras","hello","verma","ab","bc"];
+console.log(StringArr.filter(element=>
+    {
+        return element.length<3;
+    }));

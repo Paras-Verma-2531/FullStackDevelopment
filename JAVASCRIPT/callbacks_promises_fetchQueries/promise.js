@@ -12,6 +12,6 @@
  const pizzaPromise=orderPizza();
  pizzaPromise.then((pizza)=>
  {
-     console.log(pizza);
+    console.log(pizza);
  })
 //  console.log(pizzaPromise);

@@ -3,6 +3,7 @@
 // this method will be executed only once::
 setTimeout(()=>
 {
+    // anonymous function which is displaying the message
     console.log("hello this function is called after 2 sec");
 },2000);
 // this will be executed before::

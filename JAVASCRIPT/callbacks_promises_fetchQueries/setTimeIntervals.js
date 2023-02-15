@@ -9,4 +9,8 @@ setTimeout(()=>
 // this will be executed before::
 console.log("this is written before above func");
 // setInterval method is repeatedly called after the specific time:
-
+// to display date::
+setInterval(()=>{
+    const date=new Date().toTimeString();
+    console.log(date);
+},2000);

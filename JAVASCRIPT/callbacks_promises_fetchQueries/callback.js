@@ -24,6 +24,7 @@ function getCheese(next)
         next(cheese);
     },2000);
 }
+// function for Dough
 function getDough(item,next)
 {
     setTimeout(()=>
@@ -42,6 +43,7 @@ function makePizza(item,next)
       next(pizza);
     },2000);
 }
+//function for orderPizza
 function orderPizza(notifyOnSuccess)
 {
     getCheese((cheese)=>

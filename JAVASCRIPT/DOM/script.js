@@ -4,7 +4,7 @@
 // let ans=document.getElementById('link2');
 // ans.innerHTML='click here';
  document.getElementById("my-img").src="https://via.placeholder.com/100";
-// ************************************
+// **************************************
 // added elements At runtime
 const container=document.getElementsByClassName("container");//finds the class
 for(let i=0;i<4;i++)

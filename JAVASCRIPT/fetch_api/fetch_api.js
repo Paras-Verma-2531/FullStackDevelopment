@@ -9,10 +9,10 @@ async function fetchData()
 {
     try{
         const response= await fetch("https://dummyjson.com/products/1");
-        console.log(response);
+        //console.log(response);
         const jsonData= await response.json();
         loadData(jsonData);
-        console.log(jsonData);
+        //console.log(jsonData);
     }
     catch(err)
     {

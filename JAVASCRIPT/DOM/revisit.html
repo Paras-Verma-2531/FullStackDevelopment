@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevisitDOM</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container
+    {
+        width: 500px;
+        height: 500px;
+        background-color: #0000007e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box
+    {
+        width: 200px;
+        height: 70px;
+        background-color: #84f163ab;
+        color: black;
+        border-radius: 35%;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+       font-size: 1.1rem;
+    }
+    .box:hover
+    {
+         background-color: cadetblue;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box"><p>Hello World</p></div>
+    </div>
+    <script src="revisit.js"></script>
+</body>
+</html>

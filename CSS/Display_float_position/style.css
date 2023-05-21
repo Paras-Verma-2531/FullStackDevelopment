@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-p{display: inline-block;padding: 5px;position: relative;top: 0;right: 5px;}
+/* p{display: inline-block;padding: 5px;position: relative;top: 0;right: 5px;}
 .red-border
 {
     border: 2px solid red;
@@ -15,4 +15,22 @@ p{display: inline-block;padding: 5px;position: relative;top: 0;right: 5px;}
 img{
     width: 20%;
     position: absolute;
+} */
+.main
+{
+    height: 50vh;
+    width: 100vw;
+    background-color: blanchedalmond;
+}
+.top
+{
+    height: 20%;
+    background-color: black;
+}
+.left
+{
+    width: 50%;
+    float: left;
+    background-color: cadetblue;
+    height: 80%;
 }

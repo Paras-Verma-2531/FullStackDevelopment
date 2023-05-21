@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 40vw;
+    background: rgba(248, 240, 120, 0.712);
+}
+.text-box
+{
+    height: 95%;
+    width: 100%;
+}
+.puppy{height: 50%;float: left;}

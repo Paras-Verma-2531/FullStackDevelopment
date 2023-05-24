@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    border-radius: 10%;
+}
+.child
+{
+    height: 50%;
+    width: 50%;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    background-color: bisque;
+    display:grid;
+   grid-template-columns: repeat(4,auto);
+   gap: 5px;
+   margin: 40px;
+}
+.box
+{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 5px;
+    color: burlywood;
+    padding: 10px;
+}

@@ -1,8 +1,56 @@
-body{
-    background-color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-@media screen and (max-width:600px) {
-    body{
-        background-color: greenyellow;
+/* mobile-first */
+body{
+    background-color: rgba(159, 165, 160, 0.836);
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+.navbar-items
+{
+    list-style: none;
+    border-radius: 5px;
+    display: block;
+    width: 100vw;
+   text-align: center;
+   margin-bottom: 2px;
+}
+.items
+{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+.items:hover
+{
+    background-color: rgba(199, 202, 199, 0.247);
+}
+/* responsive-desktop */
+@media screen and (min-width:450px){
+    .navbar
+    {
+        justify-content: flex-end;
+    }
+    .navbar-items
+    {
+        display: inline-block;
+        width: auto;
+        margin-inline:30px;
+    }
+    .items{
+        padding: 15px;
+        border-radius: 10px;
     }
 }

@@ -47,10 +47,11 @@ body{
     {
         display: inline-block;
         width: auto;
-        margin-inline:30px;
+        margin-inline:20px;
     }
     .items{
-        padding: 15px;
+        padding: 10px;
         border-radius: 10px;
+        font-size: 1.5rem;
     }
 }

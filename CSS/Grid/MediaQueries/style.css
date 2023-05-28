@@ -7,12 +7,26 @@
 body{
     background-color: rgba(159, 165, 160, 0.836);
 }
+/* toggler */
+/* .toggler
+{
+    display:none;
+    padding: 12px;
+    background-color:hsla(0, 14%, 4%, 0.897);
+}
+.toggler-item
+{
+    position: absolute;
+    color: white;
+    background-color: white;
+    right: 10px;
+} */
 .navbar
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.87);
+    background-color: hsla(0, 14%, 4%, 0.897);
 }
 .navbar-items
 {
@@ -26,7 +40,7 @@ body{
 .items
 {
     text-decoration: none;
-    color: blanchedalmond;
+    color: rgba(243, 243, 225, 0.918);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
     width: 100%;
@@ -39,6 +53,7 @@ body{
 }
 /* responsive-desktop */
 @media screen and (min-width:450px){
+    /* .toggler{display: none;} */
     .navbar
     {
         justify-content: flex-end;

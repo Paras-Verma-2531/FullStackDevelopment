@@ -3,7 +3,7 @@
 // document.getElementById("link3").classList.add("dark-color");
 // let ans=document.getElementById('link2');
 // ans.innerHTML='click here';
- document.getElementById("my-img").src="https://via.placeholder.com/100";
+document.getElementById("my-img").src="https://picsum.photos/100";
 // **************************************
 // added elements At runtime
 const container=document.getElementsByClassName("container");//finds the class

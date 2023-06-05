@@ -9,4 +9,7 @@ const clearValue=()=>{
     document.getElementById('Fehrenhiet').value="";
     document.getElementById('Kelvin').value="";
 }
-// document.getElementById('button').addEventListener('click',clearValue);
+// document.getElementById('Celcius').addEventListener('onchange',setValue);
+const setValue=()=>{
+    document.getElementById('Fehrenhiet').value=2*document.getElementById('Celcius').value;
+}

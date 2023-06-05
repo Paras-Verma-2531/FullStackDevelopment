@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting</title>
+    <style>
+        body{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+        }
+        .container
+        {
+            background-color: black;
+            gap: 9px;
+            width: 748px;
+            height: 748px;
+            display: grid;
+            grid-template-columns: auto 198px 153px 50px;
+            grid-template-rows: 414px 130px 155px 22px;
+        }
+        .items
+        {
+            background-color: #F0f1EC;
+        }
+        .red
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+            background-color: red;
+        }
+        .white1
+        {
+            grid-column: span 3;
+        }
+        .white2
+        {
+            grid-row: span 2;
+            grid-column: span 1;
+        }
+        .white3
+        {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        .blue
+        {
+            background-color: rgb(5, 5, 82);
+            border-bottom: 10px;
+        }
+        .yellow
+        {
+            background-color: rgb(255, 255, 0);
+        }
+        .white4
+        {
+           grid-row: span 2;
+        }
+        .black
+        {
+            background-color: rgba(7, 6, 6, 0.904);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items red"></div>
+        <div class="items white1"></div>
+        <div class="items white2"></div>
+        <div class="items white3"></div>
+        <div class="items blue"></div>
+        <div class="items white4"></div>
+        <div class="items white5"></div>
+        <div class="items yellow"></div>
+        <div class="items black"></div>
+    </div>
+</body>
+</html>

@@ -4,4 +4,9 @@
 //    console.log(celcius);
 // }
 
-// document.getElementById('button').addEventListener('click',getValue);
+const clearValue=()=>{
+    document.getElementById('Celcius').value="";
+    document.getElementById('Fehrenhiet').value="";
+    document.getElementById('Kelvin').value="";
+}
+// document.getElementById('button').addEventListener('click',clearValue);

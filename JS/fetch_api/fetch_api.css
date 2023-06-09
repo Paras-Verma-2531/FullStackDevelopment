@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: rgba(160, 148, 108, 0.767);
+}
+.box
+{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+p{
+    margin: 5px;
+}
+img{
+   width: 100%;
+}

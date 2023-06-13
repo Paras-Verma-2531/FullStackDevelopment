@@ -1,5 +1,3 @@
-var NumberOfButtons = document.querySelectorAll(".drum");
-var i = 0;
 // Array of sound
 const soundArray = [
   "./sounds/crash.mp3",
@@ -14,6 +12,8 @@ const soundArray = [
 function getSound(i) {
   return new Audio(soundArray[i]);
 }
+var NumberOfButtons = document.querySelectorAll(".drum");
+var i = 0;
 // Adding keydown eventListner to entire document
 document.addEventListener("keydown", (event) => {
   selectMusic(event.key);
@@ -31,7 +31,7 @@ function selectMusic(key)
 {
     switch (key) {
         case "w":
-          getSound(0).play();
+          getSound(0).play();//performs play method on audio object
           break;
         case "a":
           getSound(1).play();
@@ -52,6 +52,7 @@ function selectMusic(key)
           getSound(6).play();
           break;
         default:
+          alert("Press only the given keys!!");
           break;
       }
 }

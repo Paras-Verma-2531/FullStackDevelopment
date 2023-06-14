@@ -1,0 +1,12 @@
+document.getElementById("button").addEventListener('click',()=>{
+    document.getElementById("output").value=0;
+})
+document.getElementById("left-btn").addEventListener('click',()=>{
+    if(document.getElementById("output").value!=0)
+    {
+    document.getElementById("output").value=document.getElementById("output").value-1;
+    }
+})
+document.getElementById("right-btn").addEventListener('click',()=>{
+    document.getElementById("output").value=1*document.getElementById("output").value+1;
+})

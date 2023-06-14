@@ -1,12 +1,15 @@
+const posButton=document.getElementById("right-btn");
+const negButton=document.getElementById("left-btn");
+const output=document.getElementById("output");
 document.getElementById("button").addEventListener('click',()=>{
     document.getElementById("output").value=0;
 })
-document.getElementById("left-btn").addEventListener('click',()=>{
-    if(document.getElementById("output").value!=0)
+negButton.addEventListener('click',()=>{
+    if(output.value!=0)
     {
-    document.getElementById("output").value=document.getElementById("output").value-1;
+    output.value=output.value-1;
     }
 })
-document.getElementById("right-btn").addEventListener('click',()=>{
-    document.getElementById("output").value=1*document.getElementById("output").value+1;
+posButton.addEventListener('click',()=>{
+    output.value=1*output.value+1;
 })

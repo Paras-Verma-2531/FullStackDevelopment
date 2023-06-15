@@ -13,7 +13,7 @@ const leftButton = document.getElementById("left-button");
 const rightButton = document.getElementById("right-button");
 const containerWidth = 80;
 const flexContainerWidth = images.length * containerWidth;
-console.log(flexContainerWidth);
+const carouselNav=document.getElementById("carousel-nav");
 
 for (var i = 0; i < images.length; i++) {
   // create a new image element
@@ -23,26 +23,38 @@ for (var i = 0; i < images.length; i++) {
   // add the image class to each 'img'
   newimage.classList.add("image");
   flexContainer.appendChild(newimage);
+  // create new div for nav:
+  const carouselDot=document.createElement('div');
+  carouselDot.classList.add("carousel-dot");
+  carouselNav.appendChild(carouselDot);
+  // add event listner to each dot
+  carouselDot.addEventListener('click',(event)=>{
+    // we need to convert list of nav children to array to find index of each elem.
+    //... are used to add array of child to outer array as its element rather than array of array
+    const index=[...carouselNav.children].indexOf(event.target);
+    // console.log(index);
+    showImage(index);
+  })
 }
 
 let position = 0;
 leftButton.addEventListener("click", () => {
-  if(position==0)position=images.length-1;
-  else position--;
-  showImage();
+  if(position==0)showImage(images.length-1);
+  else showImage(position-1);
 });
 // event listner for right button
 rightButton.addEventListener("click", () => {
-  if(position==images.length-1)position=0;
-  else position=position%(images.length-1)+1;
-  showImage();
-  
+  if(position==images.length-1)showImage(0);
+  else showImage(position+1);
 });
 // function showImage
-function showImage() {
+function showImage(currposition) {
   // calculate new transform position
-  const transformXPosition = -position * containerWidth;
-  // console.log(transformXPosition);
+  const prevDot=carouselNav.children[position];
+  prevDot.classList.remove("active");
+  position=currposition;
+  carouselNav.children[position].classList.add("active");
+  const transformXPosition = -currposition * containerWidth;
   flexContainer.style.transform = `translateX(${transformXPosition}vw)`;
   // console.log("done");
 }

@@ -38,6 +38,7 @@ for (var i = 0; i < images.length; i++) {
 }
 
 let position = 0;
+showImage(0);
 leftButton.addEventListener("click", () => {
   if(position==0)showImage(images.length-1);
   else showImage(position-1);

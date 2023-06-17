@@ -1,0 +1,23 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.profileCard
+{
+    text-align: center;
+    padding: 20px;
+    box-shadow: 2px 2px 2px red;
+    border: 5px solid grey;
+}
+.name
+{
+    font-size: 1.5rem;
+    font-family:serif;
+}

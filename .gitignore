@@ -1,2 +1,4 @@
 /nodejs/node_modules
 /nodejs/.env
+/mongoose mongodb/node_modules
+/mongoose mongodb/config.env
